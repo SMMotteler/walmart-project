@@ -3,3 +3,8 @@ body {
     margin-top: 30px;
     font-family: 'IBM Plex Sans', sans-serif;
 }
+audio {
+    filter: sepia(20%) saturate(70%)  contrast(99%) invert(12%);
+    width: 200px;
+    height: 25px;
+}

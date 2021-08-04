@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Submit a product</title>
+    </head>
+    <body>
+        <form method="post" action="/homepage">
+            <label for="product_name">What is the name of your product?</label>
+            <input type=text name="product_name" value="" />
+            <label for="product_image_url">What is the image url of your product?</label>
+            <input type=text name="product_image_url" value="" />
+            <label for="product_url">What is the link to your product?</label>
+            <input type=text name="product_url" value="" />
+            <!-- <input type=radio name="category" value="" /> figure out how to write this-->
+            <label for="category">What category does your product fit into?</label>
+            <select name="category">
+                <option value="clothing">Clothing</option>
+                <option value="furniture">Furniture</option>
+                <option value="other">Other</option>
+            </select>
+        </form>
+    </body>
+</html>
