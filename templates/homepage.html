@@ -1,15 +1,36 @@
 <html>
     <head>
         <title>Welcome!</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+<style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+body{font-family: 'Kiwi Maru', serif;} */
+</style>
+
     </head>
     <body>
+        <div class="topnav">
+  <a class="active" href="/homepage">Home  <i class="fas fa-heart"></i></a>
+  <a href="/browse/products">Browse  <i class="fas fa-tree"></i></a>
+  <a href="/submit/products">Submit  <i class="fas fa-seedling"></i></a>
+  <a href="/about">About  <i class="fas fa-leaf"></i></a>
+  <a href="/quiz">Quiz  <i class="fas fa-frog"></i></a>
+      <!-- <form action="/search">
+      <input type="text" placeholder="Search..." name="search">
+      <input type="submit" value="Submit"/>
+        <button type="submit"></button> -->
+  </div>
+        <header>
         <h1>Welcome to Cottagecore for All!</h1>
+        </header>
         <p>What are you looking for?</p>
         <a href="/browse/products"><h2>Browse Products</h2></a>
-        <a href="/browse/diy"><h2>Browse DIY's</h2></a>
+        <!-- <a href="/browse/diy"><h2>Browse DIY's</h2></a> -->
         <a href="/submit/products"><h2>Submit Products</h2></a>
-        <a href="/submit/diy"><h2>Submit DIY's</h2></a>
+        <a href="/quiz"><h2>Take the Style Quiz</h2></a>
+        <!-- <a href="/submit/diy"><h2>Submit DIY's</h2></a> -->
         <!-- <form method="post" action="/shopping">
             <input type="text" name="nickname" placeholder="type what you're looking for here!"/>
             <input type="submit" value="Submit"/>

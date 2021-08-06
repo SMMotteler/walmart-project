@@ -31,18 +31,21 @@ mongo = PyMongo(app)
 @app.route('/homepage')
 def homepage():
     return render_template("homepage.html", time = datetime.now())
+@app.route('/about')
+def about():
+    return render_template("about.html", time = datetime.now())
 
-@app.route('/profile')
-def profile():
-    return render_template("profile.html", time=datetime.now())
+# @app.route('/profile')
+# def profile():
+#     return render_template("profile.html", time=datetime.now())
 
-@app.route('/login')
-def login():
-    return "This is a placeholder for the login page"
+# @app.route('/login')
+# def login():
+#     return "This is a placeholder for the login page"
 
-@app.route('/sign-up')
-def signup():
-    return "This is a placeholder for the sign-up page"
+# @app.route('/sign-up')
+# def signup():
+#     return "This is a placeholder for the sign-up page"
 
 # @app.route('/shopping', methods = ['GET', 'POST'])
 # def shopping():
@@ -54,32 +57,77 @@ def signup():
 # def shopping_s(nickname):
 #     return "Got your nickname, which is "+nickname
 
-@app.route('/submit/diy')
-def s_d():
-    return "This is a placeholder for a page to submit diy's"
+# @app.route('/submit/diy')
+# def s_d():
+#     return "This is a placeholder for a page to submit diy's"
 
 
-@app.route('/browse/diy')
-def b_d():
-    return "This is a placeholder for the diy exploring page"
+# @app.route('/browse/diy')
+# def b_d():
+#     return "This is a placeholder for the diy exploring page"
 
 
 @app.route('/submit/products')
 def s_p():
-    return "This is a placeholder for a page to submit products"
+    return render_template("submit_product.html", time=datetime.now())
+
+@app.route('/submit/complete', methods = ['GET', 'POST'])
+def s_c():
+    if request.method == "GET":
+        return "Error! You didn't put in a product."
+    else:
+       print(request.form)
+       product_name = request.form['product_name']
+       img_url = request.form['product_image_url']
+       user = request.form['user']
+       product_url = request.form['product_url']
+       category = request.form['category']
+
+       # get the collection you want to use
+       collection = mongo.db.products
+       # insert the new data
+       new_product = {'product': product_name, 'img': img_url, 'user': user, 'url': product_url, 'category': category}
+       collection.insert(new_product)
+       return "Thanks for your submission"
 
 @app.route('/browse/products')
 def b_p():
-    return "This is a placeholder for the product exploring page"
+    collection = mongo.db.products
+    products = collection.find({})
+    return render_template('browse_products.html', products=products)
 
-@app.route('/search')
-def search():
-    return "This is a placeholder for a page to show a results of a search"
+@app.route('/browse/products/<product_id>')
+def spec_p(product_id):
+    collection = mongo.db.products
+    product = collection.findOne({'_id': ObjectId(product_id)})
+    return render_template("specific_recipe.html", product = product)
 
-@app.route('/add/diy')
-def add_d():
-    return "This is a placeholder for the method for submitting a diy"
+# @app.route('/search', methods = ['GET', 'POST'])
+# def search_handle():
+#     if request.method == "GET":
+#         return "Error! You didn't put anything in the search bar."
+#     else: 
+#        print(request.form)
+#        search = request.form['search']
+#        redirect('/search/'+search)
 
-@app.route('/add/product')
-def add_p():
-    return "This is a placeholder for the method for submitting a product"
+# @app.route('/search/<search>')
+# def search():
+#     collection = mongo.db.products
+#     products = collection.find({"product" : {'$regex' : '.*' + search + '.*i'}})
+#     if products.count() == 0:
+#         return "No elements match your query"
+#     else:
+#         return render_template('/')
+
+@app.route('/quiz')
+def quiz():
+    return render_template('quiz.html')
+
+# @app.route('/add/diy')
+# def add_d():
+#     return "This is a placeholder for the method for submitting a diy"
+
+# @app.route('/add/product')
+# def add_p():
+#     return "This is a placeholder for the method for submitting a product"
