@@ -88,7 +88,7 @@ def s_c():
        # insert the new data
        new_product = {'product': product_name, 'img': img_url, 'user': user, 'url': product_url, 'category': category}
        collection.insert(new_product)
-       return "Thanks for your submission"
+       return render_template("specific_product.html", product = new_product)
 
 @app.route('/browse/products')
 def b_p():
@@ -99,8 +99,8 @@ def b_p():
 @app.route('/browse/products/<product_id>')
 def spec_p(product_id):
     collection = mongo.db.products
-    product = collection.findOne({'_id': ObjectId(product_id)})
-    return render_template("specific_recipe.html", product = product)
+    product = collection.find_one({'_id': ObjectId(product_id)})
+    return render_template("specific_product.html", product = product)
 
 # @app.route('/search', methods = ['GET', 'POST'])
 # def search_handle():

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Cottagecore for All: Style Quiz</title>
-<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
-<style>
-    /* @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+    <title>Cottagecore for All: Style Quiz</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
 
 body {
     color: rgb(84,84,12);
@@ -64,33 +65,40 @@ img{
 width: 100%;
 height: 100%;
 } */
-</style>
+    </style>
 </head>
+
 <body>
-            <div class="topnav">
-  <a href="/homepage">Home  <i class="fas fa-heart"></i></a>
-  <a href="/browse/products">Browse  <i class="fas fa-tree"></i></a>
-  <a href="/submit/products">Submit  <i class="fas fa-seedling"></i></a>
-  <a href="/about">About  <i class="fas fa-leaf"></i></a>
-  <a class="active" href="/quiz">Quiz  <i class="fas fa-frog"></i></a>
-      <!-- <form action="/search">
+    <div class="topnav">
+        <a href="/homepage">Home <i class="fas fa-heart"></i></a>
+        <a href="/browse/products">Browse <i class="fas fa-tree"></i></a>
+        <a href="/submit/products">Submit <i class="fas fa-seedling"></i></a>
+        <a href="/about">About <i class="fas fa-leaf"></i></a>
+        <a class="active" href="/quiz">Quiz <i class="fas fa-frog"></i></a>
+        <!-- <form action="/search">
       <input type="text" placeholder="Search..." name="search">
       <input type="submit" value="Submit"/>
         <button type="submit"></button> -->
-  </div>
+    </div>
 
-<div id="main">
-<div id="header"><h1>What percent cottagecore are you?</h1></div>
-<div class="form-check">
+    <div id="main">
+        <div id="header">
+            <h1>What percent cottagecore are you?</h1>
+        </div>
+        <div class="form-check">
 
-<form  id="form1">
-<p>What is your favorite animal?</p>
-<label><input type="radio" name="animal"  value="0" /><img src="../static/images/dolphin.jpg" style="object-fit:contain;">Dolphin</label>
-<label><input type="radio" name="animal" value="4" /><img src="../static/images/wolf.jpg" style="object-fit:contain;">Wolf</label>
-<label><input type="radio" name="animal" value="7" /><img src="../static/images/cat.jpg" style="object-fit:contain;">Cat</label>
-<label><input type="radio" name="animal" value="10" /><img src="../static/images/cow.jpg" style="object-fit:contain;">Cow</label>
+            <form id="form1">
+                <p>What is your favorite animal?</p>
+                <label><input type="radio" name="animal" value="0" /><img src="../static/images/dolphin.jpg"
+                        style="object-fit:contain;">Dolphin</label>
+                <label><input type="radio" name="animal" value="4" /><img src="../static/images/wolf.jpg"
+                        style="object-fit:contain;">Wolf</label>
+                <label><input type="radio" name="animal" value="7" /><img src="../static/images/cat.jpg"
+                        style="object-fit:contain;">Cat</label>
+                <label><input type="radio" name="animal" value="10" /><img src="../static/images/cow.jpg"
+                        style="object-fit:contain;">Cow</label>
 
-<!-- <input type="radio" class="btn-check" name="age" id="young" value="1" autocomplete="off" checked >
+                <!-- <input type="radio" class="btn-check" name="age" id="young" value="1" autocomplete="off" checked >
 <label class="btn btn-secondary" for="age">under 18</label>
 
 <input type="radio" class="btn-check" name="age" id="mid" value="2" autocomplete="off">
@@ -102,108 +110,144 @@ height: 100%;
 <input type="radio" class="btn-check" name="age" id="extra-old" value="4" autocomplete="off">
 <label class="btn btn-secondary" for="age">99+</label>
  -->
-<p>What's your favorite hobby?</p>
-<label><input type="radio" name="hobby" value="0" /><img src="../static/images/videogame.jpg" style="object-fit:contain;">Playing Video Games</label>
-<label><input type="radio" name="hobby" value="4" /><img src="../static/images/dancing.jpg" style="object-fit:contain;">Dancing</label>
-<label><input type="radio" name="hobby"  value="7" /><img src="../static/images/painting.jpg" style="object-fit:contain;">Painting</label>
-<label><input type="radio" name="hobby"  value="10" /><img src="../static/images/gardening.jpg" style="object-fit:contain;">Gardening</label>
+                <p>What's your favorite hobby?</p>
+                <label><input type="radio" name="hobby" value="0" /><img src="../static/images/videogame.jpg"
+                        style="object-fit:contain;">Playing Video Games</label>
+                <label><input type="radio" name="hobby" value="4" /><img src="../static/images/dancing.jpg"
+                        style="object-fit:contain;">Dancing</label>
+                <label><input type="radio" name="hobby" value="7" /><img src="../static/images/painting.jpg"
+                        style="object-fit:contain;">Painting</label>
+                <label><input type="radio" name="hobby" value="10" /><img src="../static/images/gardening.jpg"
+                        style="object-fit:contain;">Gardening</label>
 
-<p>What dessert would you make?</p>
-<label><input type="radio" name="dessert" value="0" /><img src="../static/images/truffles.jpg" style="object-fit:contain;">Truffles</label>
-<label><input type="radio" name="dessert" value="4" /><img src="../static/images/milkshake.jpg" style="object-fit:contain;">Milkshake</label>
-<label><input type="radio" name="dessert"  value="7" /><img src="../static/images/cake.jpg" style="object-fit:contain;">Cake</label>
-<label><input type="radio" name="dessert" value="10" /><img src="../static/images/pie.jpg" style="object-fit:contain;">Pie</label>
+                <p>What dessert would you make?</p>
+                <label><input type="radio" name="dessert" value="0" /><img src="../static/images/truffles.jpg"
+                        style="object-fit:contain;">Truffles</label>
+                <label><input type="radio" name="dessert" value="4" /><img src="../static/images/milkshake.jpg"
+                        style="object-fit:contain;">Milkshake</label>
+                <label><input type="radio" name="dessert" value="7" /><img src="../static/images/cake.jpg"
+                        style="object-fit:contain;">Cake</label>
+                <label><input type="radio" name="dessert" value="10" /><img src="../static/images/pie.jpg"
+                        style="object-fit:contain;">Pie</label>
 
-<p>Which house is your favorite?</p>
-<label><input type="radio" name="house" value="0" /><img src="../static/images/mcmansion.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="house" value="4" /><img src="../static/images/brownstone.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="house" value="7" /><img src="../static/images/farmhouse.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="house" value="10" /><img src="../static/images/cottage.jpg" style="object-fit:contain;"></label>
+                <p>Which house is your favorite?</p>
+                <label><input type="radio" name="house" value="0" /><img src="../static/images/mcmansion.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="house" value="4" /><img src="../static/images/brownstone.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="house" value="7" /><img src="../static/images/farmhouse.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="house" value="10" /><img src="../static/images/cottage.jpg"
+                        style="object-fit:contain;"></label>
 
-<p>Which pattern is your favorite?</p>
-<label><input type="radio" name="pattern" value="0" /><img src="../static/images/abstract.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="pattern" value="4" /><img src="../static/images/polygon.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="pattern" value="7" /><img src="../static/images/paisley.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="pattern" value="10" /><img src="../static/images/floral.jpg" style="object-fit:contain;"></label>
+                <p>Which pattern is your favorite?</p>
+                <label><input type="radio" name="pattern" value="0" /><img src="../static/images/abstract.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="pattern" value="4" /><img src="../static/images/polygon.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="pattern" value="7" /><img src="../static/images/paisley.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="pattern" value="10" /><img src="../static/images/floral.jpg"
+                        style="object-fit:contain;"></label>
 
-<p>What color palette is your favorite?</p>
-<label><input type="radio" name="palette" value="0" /><img src="../static/images/punk.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="palette" value="4" /><img src="../static/images/bright.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="palette" value="7" /><img src="../static/images/pastel.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="palette" value="10" /><img src="../static/images/cottagecore.jpg" style="object-fit:contain;"></label>
+                <p>What color palette is your favorite?</p>
+                <label><input type="radio" name="palette" value="0" /><img src="../static/images/punk.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="palette" value="4" /><img src="../static/images/bright.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="palette" value="7" /><img src="../static/images/pastel.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="palette" value="10" /><img src="../static/images/cottagecore.jpg"
+                        style="object-fit:contain;"></label>
 
-<p>What is your favorite Disney movie?</p>
-<label><input type="radio" name="movie" value="0" /><img src="../static/images/hercules.jpg" style="object-fit:contain;">Hercules</label>
-<label><input type="radio" name="movie" value="4" /><img src="../static/images/mermaid.jpg" style="object-fit:contain;">The Little Mermaid</label>
-<label><input type="radio" name="movie" value="7" /><img src="../static/images/alice.jpg" style="object-fit:contain;">Alice in Wonderland</label>
-<label><input type="radio" name="movie" value="10" /><img src="../static/images/winnie.jpg" style="object-fit:contain;">Winnie the Pooh</label>
+                <p>What is your favorite Disney movie?</p>
+                <label><input type="radio" name="movie" value="0" /><img src="../static/images/hercules.jpg"
+                        style="object-fit:contain;">Hercules</label>
+                <label><input type="radio" name="movie" value="4" /><img src="../static/images/mermaid.jpg"
+                        style="object-fit:contain;">The Little Mermaid</label>
+                <label><input type="radio" name="movie" value="7" /><img src="../static/images/alice.jpg"
+                        style="object-fit:contain;">Alice in Wonderland</label>
+                <label><input type="radio" name="movie" value="10" /><img src="../static/images/winnie.jpg"
+                        style="object-fit:contain;">Winnie the Pooh</label>
 
-<p>What outfit is your favorite?</p>
-<label><input type="radio" name="outfit" value="0" /><img src="../static/images/green.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="outfit" value="4" /><img src="../static/images/yellow.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="outfit" value="7" /><img src="../static/images/pink.jpg" style="object-fit:contain;"></label>
-<label><input type="radio" name="outfit" value="10" /><img src="../static/images/orange.jpg" style="object-fit:contain;"></label>
+                <p>What outfit is your favorite?</p>
+                <label><input type="radio" name="outfit" value="0" /><img src="../static/images/green.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="outfit" value="4" /><img src="../static/images/yellow.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="outfit" value="7" /><img src="../static/images/pink.jpg"
+                        style="object-fit:contain;"></label>
+                <label><input type="radio" name="outfit" value="10" /><img src="../static/images/orange.jpg"
+                        style="object-fit:contain;"></label>
 
-<p>What is your dream job?</p>
-<label><input type="radio" name="job" value="0" /><img src="../static/images/lawyer.jpg" style="object-fit:contain;">Lawyer</label>
-<label><input type="radio" name="job" value="4" /><img src="../static/images/vet.jpg" style="object-fit:contain;">Veterinarian</label>
-<label><input type="radio" name="job" value="7" /><img src="../static/images/poet.jpg" style="object-fit:contain;">Poet</label>
-<label><input type="radio" name="job" value="10" /><img src="../static/images/homestead.jpg" style="object-fit:contain;">Homesteader</label>
+                <p>What is your dream job?</p>
+                <label><input type="radio" name="job" value="0" /><img src="../static/images/lawyer.jpg"
+                        style="object-fit:contain;">Lawyer</label>
+                <label><input type="radio" name="job" value="4" /><img src="../static/images/vet.jpg"
+                        style="object-fit:contain;">Veterinarian</label>
+                <label><input type="radio" name="job" value="7" /><img src="../static/images/poet.jpg"
+                        style="object-fit:contain;">Poet</label>
+                <label><input type="radio" name="job" value="10" /><img src="../static/images/homestead.jpg"
+                        style="object-fit:contain;">Homesteader</label>
 
-<p>Which place would you like to visit?</p>
-<label><input type="radio" name="place"  value="0" /><img src="../static/images/nyc.jpg" style="object-fit:contain;">New York City, New York</label>
-<label><input type="radio" name="place"  value="4" /><img src="../static/images/honolulu.jpg" style="object-fit:contain;">Honolulu, Hawaii</label>
-<label><input type="radio" name="place"  value="7" /><img src="../static/images/portofino.jpg" style="object-fit:contain;">Portofino, Italy</label>
-<label><input type="radio" name="place"  value="10" /><img src="../static/images/hampshire.jpeg" style="object-fit:contain;">Hampshire, England</label>
+                <p>Which place would you like to visit?</p>
+                <label><input type="radio" name="place" value="0" /><img src="../static/images/nyc.jpg"
+                        style="object-fit:contain;">New York City, New York</label>
+                <label><input type="radio" name="place" value="4" /><img src="../static/images/honolulu.jpg"
+                        style="object-fit:contain;">Honolulu, Hawaii</label>
+                <label><input type="radio" name="place" value="7" /><img src="../static/images/portofino.jpg"
+                        style="object-fit:contain;">Portofino, Italy</label>
+                <label><input type="radio" name="place" value="10" /><img src="../static/images/hampshire.jpeg"
+                        style="object-fit:contain;">Hampshire, England</label>
 
 
 
-<button type="submit" value="Submit">Submit</button>
+                <button type="submit" value="Submit">Submit</button>
 
-</form>
-</div>
-<p id="answer"></p>
-<p id="answer2"></p>
-</div>
-<script>
-	   document.getElementById("form1").onsubmit=function() {
-	   
-	   
-	   hobby = parseInt(document.querySelector('input[name = "hobby"]:checked').value);  
-	  
-	  dessert = parseInt(document.querySelector('input[name = "dessert"]:checked').value);
-	   
-	  house = parseInt(document.querySelector('input[name = "house"]:checked').value);
-	   
-	  pattern = parseInt(document.querySelector('input[name = "pattern"]:checked').value);
-	  palette = parseInt(document.querySelector('input[name = "palette"]:checked').value);
-	  movie = parseInt(document.querySelector('input[name = "movie"]:checked').value);
-	  outfit = parseInt(document.querySelector('input[name = "outfit"]:checked').value);
-	  job = parseInt(document.querySelector('input[name = "job"]:checked').value);
-	  animal = parseInt(document.querySelector('input[name = "animal"]:checked').value);
-	  place = parseInt(document.querySelector('input[name = "place"]:checked').value);
+            </form>
+        </div>
+        <p id="answer"></p>
+        <!-- <p id="answer2"></p> -->
+    </div>
+    <script>
+        document.getElementById("form1").onsubmit = function () {
 
-      total= pattern+palette+movie+outfit+job+animal+place+house+dessert+hobby;
-	   
-	  
-	   document.getElementById("answer").innerHTML = "You are "+total+"% Cottagecore!";	   
 
-// 	   if(total < 4) {
-// document.getElementById("answer2").innerHTML = "You got Quiet Company.";
-// }
+            hobby = parseInt(document.querySelector('input[name = "hobby"]:checked').value);
 
-//    if(total >=4 && total < 7) {
-// document.getElementById("answer2").innerHTML = "You got Spoon.";
-// }
-	
-// 	if(total >=7) {
-// document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
-// }   
-	   
-	   return false; // required to not refresh the page; just leave this here
-	   }// end the submit function
-</script>
+            dessert = parseInt(document.querySelector('input[name = "dessert"]:checked').value);
+
+            house = parseInt(document.querySelector('input[name = "house"]:checked').value);
+
+            pattern = parseInt(document.querySelector('input[name = "pattern"]:checked').value);
+            palette = parseInt(document.querySelector('input[name = "palette"]:checked').value);
+            movie = parseInt(document.querySelector('input[name = "movie"]:checked').value);
+            outfit = parseInt(document.querySelector('input[name = "outfit"]:checked').value);
+            job = parseInt(document.querySelector('input[name = "job"]:checked').value);
+            animal = parseInt(document.querySelector('input[name = "animal"]:checked').value);
+            place = parseInt(document.querySelector('input[name = "place"]:checked').value);
+
+            total = pattern + palette + movie + outfit + job + animal + place + house + dessert + hobby;
+
+
+            document.getElementById("answer").innerHTML = "You are " + total + "% Cottagecore!";
+
+            // 	   if(total < 4) {
+            // document.getElementById("answer2").innerHTML = "You got Quiet Company.";
+            // }
+
+            //    if(total >=4 && total < 7) {
+            // document.getElementById("answer2").innerHTML = "You got Spoon.";
+            // }
+
+            // 	if(total >=7) {
+            // document.getElementById("answer2").innerHTML = "You got Willie Nelson.";
+            // }   
+
+            return false; // required to not refresh the page; just leave this here
+        }// end the submit function
+    </script>
 
 </body>
+
 </html>
-	

@@ -17,18 +17,24 @@
       <input type="submit" value="Submit"/>
         <button type="submit"></button> -->
   </div>
-<h1>Welcome to our products page! Click on any of the products you're interested in to learn more.</h1>
+  <div class="center"><p class="boxy bigger">Browse Products</p></div>
+<div><p class="boxy smaller" style="border: 2px solid rgb(156,163,99);
+    background-color: rgb(84,92,19);color:rgb(156,163,99);
+">Click on any of the products you're interested in to learn more.</p></div>
                         <!-- <ul> -->
+                           <div style="display:flex;flex-flow:row wrap;justify-content: center;"> 
 {% for product in products %}
                         <!-- <li> -->
-                            <div style="width:45%">
-<h3>{{ product.product }}</h3><br>
-<img src = {{ product.img }} style="object-fit:contain;width:100%">
-<h3>Category: {{ product.category }}</h3>
-</div>
+                            <div style="padding: 5px;margin:auto;flex-grow:1;width:50%">
+                           <a href="/browse/products/{{product._id }}">
+                            <div style="width:100%;background-color:white;" class="boxy smaller">
+<h3>{{ product.product }}</h3>
+<img src = {{ product.img }} style="object-fit:contain;width:100%;">
+
+</div></a></div>
                         <!-- </li> -->
                     {% endfor %}
                 <!-- </ul> -->
-
+</div>
     </body>
 </html>

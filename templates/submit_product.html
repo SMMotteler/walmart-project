@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Submit a product</title>
+        <title>Cottagecore for All: Submit a Product</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 <link rel="stylesheet" type="text/css" href="../static/css/style.css" />
@@ -17,23 +17,26 @@
       <input type="submit" value="Submit"/>
         <button type="submit"></button> -->
   </div>
-
+<div class="center"><p class="boxy bigger">Submit a Product!</p></div>
         <form method="post" action="/submit/complete">
-            <label for="name">What is your name?</label>
-            <input type=text name="user" value="" />
-            <label for="product_name">What is the name of your product?</label>
-            <input type=text name="product_name" value="" />
-            <label for="product_image_url">What is the image url of your product?</label>
-            <input type=text name="product_image_url" value="" />
-            <label for="product_url">What is the link to your product?</label>
-            <input type=text name="product_url" value="" />
-            <label for="category">What category does your product fit into?</label>
-            <select name="category">
+            <label for="name" class="form">What is your name?</label>
+            <input class="f_input short" type=text name="user" value="" />
+            <label for="product_name" class="form">What is the name of your product?</label>
+            <input class="f_input long" type=text name="product_name" value="" />
+            <label for="product_image_url" class="form">What is the image url of your product?</label>
+            <input class="f_input long" type=text name="product_image_url" value="" />
+            <label for="product_url" class="form">What is the link to your product?</label>
+            <input class="f_input long" type=text name="product_url" value="" />
+            <label for="category" class="form">What category does your product fit into?</label>
+            <select class="f_input short" name="category">
                 <option value="clothing">Clothing</option>
                 <option value="furniture">Furniture</option>
                 <option value="other">Other</option>
             </select>
-            <input type="submit" value="Submit"/>
+            <br>
+            <div class="center">
+            <input class="f_input submit" type="submit" value="Submit"/>
+            </div>
         </form>
     </body>
 </html>

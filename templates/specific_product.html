@@ -1,11 +1,11 @@
 <html>
     <head>
         <title>Cottagecore for All: {{product.product}}</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-<link rel="stylesheet" type="text/css" href="../static/css/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../../static/css/style.css" />
     </head>
-    <body>
+    <body >
                 <div class="topnav">
   <a href="/homepage">Home  <i class="fas fa-heart"></i></a>
   <a class="active" href="/browse/products">Browse  <i class="fas fa-tree"></i></a>
@@ -17,11 +17,21 @@
       <input type="submit" value="Submit"/>
         <button type="submit"></button> -->
   </div>
-
-<h3>{{ product.product }}</h3><br>
-<p></p>contributed by {{product.user}}</p><br> <img src = {{ product.img }} style="object-fit:contain;width:100%">
-<h5><br>Link to the product: [<a href={{ product.url }}>0</a>]</h5><br>
-<h3>Category: {{ product.category }}</h3>
-
-    </body>
+  <div class="boxy" style="font-size:50px">{{ product.product }}
+      <br>
+      <p style="font-size:20px;">contributed by {{product.user}}</p>
+  </div>
+<div class="center">
+<img src = {{ product.img }} style="width:80%; height:80%;
+    border-radius: 5px;    margin-top:10px;
+    border: 2px solid rgb(84,92,19);
+"
+>
+</div>
+<div class="center" style="padding:10px;">
+<a class="main_b" href={{ product.url }} target="_blank">Click here to purchase!</a>
+</div>
+<div class="center">
+<div class="boxy smaller" style="margin-top:0px;width:60%">Category: {{ product.category }}</div>
+</div>    </body>
 </html>
